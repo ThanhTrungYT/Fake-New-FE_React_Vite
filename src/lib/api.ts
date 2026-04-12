@@ -2,7 +2,7 @@ export async function predictNews(payload: {
   text?: string;
   url?: string;
 }) {
-  const res = await fetch(`${process.env.API}` + "/api/predict/", {
+  const res = await fetch("https://predict-fake-news-python-sklearn.vercel.app/api/predict/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
